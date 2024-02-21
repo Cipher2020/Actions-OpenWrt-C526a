@@ -24,4 +24,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-nginx/Makefile
 #sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' feeds/luci/collections/luci/Makefile
 
-
+cat>>.config<<EOF
+CONFIG_PACKAGE_LUCI-APP-VSSR=y
+CONFIG_PACKAGE_LUCI-APP-ssr plus=y
